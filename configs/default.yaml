@@ -1,0 +1,57 @@
+# via54SciForge Configuration / 默认配置
+project:
+  name: "via54SciForge"
+  version: "1.0.0"
+  default_language: "bilingual"  # zh + en
+
+paths:
+  runs_dir: "runs"
+  state_db: "runs/sciforge_state.db"
+  kb_root: "D:/KnowledgeBase"
+  kb_restructured: "D:/KnowledgeBase/Restructured"
+  kb_db: "C:/KnowledgeBase_FastRuntime/VectorDB/via54_kb.db"
+  gold_db: "Z:/KnowledgeBase_HotCache/gold_vault_node_z.db"
+  hotcache_dir: "Z:/KnowledgeBase_HotCache"
+  okf_catalog: "D:/KnowledgeBase/.kb_system/okf_dcat3_catalog.json"
+  medit_bin: "F:/agent/ai/projects/via54Medit/bin/medit.exe"
+
+llm:
+  provider: "auto" # auto | mmx | glm | openai | deepseek | sensenova | ollama | offline
+  model: ""
+  endpoint: ""
+  timeout_s: 60
+  temperature: 0.2
+  max_tokens: 4096
+
+literature:
+  enabled_sources:
+    - "openalex"
+    - "pubmed"
+    - "arxiv"
+    - "semanticscholar"
+    - "europepmc"
+  max_results_per_source: 10
+  timeout_per_source_s: 15.0
+  mailto: "via54sciforge@via54.org"
+
+simulation:
+  sandbox_timeout_s: 30
+  default_seed: 42
+  default_bootstrap_n: 1500
+  dpi: 300
+
+evolution:
+  default_generations: 10
+  population_per_gen: 4
+  num_islands: 3
+  migration_interval: 3
+  novelty_threshold: 0.08
+  bins_x: 6
+  bins_y: 6
+
+deliverables:
+  default_report_type: "deep_research"
+  default_ppt_theme: "academic_navy"
+  render_engine: "powerpoint"
+  render_timeout_s: 45
+  render_dpi: 150

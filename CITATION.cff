@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use via54SciForge in your research, please cite it as below."
+title: "via54SciForge: Unified Autonomous Scientific Research, Simulation, Evolution, Sovereign KB Linking & Publication Suite"
+version: "1.0.0"
+date-released: "2026-11-23"
+authors:
+  - alias: "veawho"
+    name: "via54Lab"
+repository-code: "https://github.com/veawho/via54SciForge"
+url: "https://via54.net/sciforge/"
+license: "MIT"
+keywords:
+  - autonomous-science
+  - literature-review
+  - map-elites
+  - knowledge-graph
+  - personalized-pagerank
+  - mcp-server

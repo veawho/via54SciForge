@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "via54sciforge"
+version = "1.0.0"
+description = "via54SciForge — Unified Autonomous Scientific Research, Experiment Simulation, Algorithm Evolution, Sovereign KB Linking, Academic Authoring & Deliverable Suite"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "via54 (veawho)", email = "via54@via54.org" }
+]
+dependencies = [
+  "pydantic>=2.0",
+  "httpx>=0.27",
+  "pyyaml>=6.0",
+  "jinja2>=3.1",
+  "rich>=13.0",
+  "typer>=0.12",
+  "networkx>=3.2",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  "pymupdf>=1.24",
+  "python-pptx>=0.6.23",
+  "python-docx>=1.1",
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "mcp>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+office = [
+  "pywin32>=306; sys_platform == 'win32'",
+]
+kb = [
+  "pymilvus>=2.4",
+  "qdrant-client>=1.9",
+]
+
+[project.scripts]
+via54-sciforge = "via54sciforge.interfaces.cli:app"
+via54-sciforge-mcp = "via54sciforge.interfaces.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"

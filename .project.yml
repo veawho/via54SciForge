@@ -1,0 +1,22 @@
+name: via54SciForge
+version: 1.0.0
+owner: veawho
+visibility: public
+homepage: https://via54.net/sciforge/
+repository: https://github.com/veawho/via54SciForge
+license: MIT
+description: >
+  Unified 7-pillar autonomous scientific research suite combining multi-source literature analysis & PDF dual-source audit,
+  active screening & hypothesis synthesis, AST-sandboxed scientific simulation, multi-island MAP-Elites algorithm evolution,
+  read-only Sovereign KB HippoRAG2 PPR linking, bilingual academic writing & peer review, and interactive HTML/DOCX/12-slide PPTX deliverables.
+topics:
+  - ai-scientist
+  - literature-review
+  - algorithm-evolution
+  - map-elites
+  - knowledge-graph
+  - mcp-server
+  - scientific-simulation
+  - paper2slides
+  - fastapi
+  - via54
